@@ -1,0 +1,45 @@
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #000, #1a1a1a); /* Dark gradient background */
+  min-height: 100vh; /* Keep the full viewport height */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Consistent font */
+  color: #e0e0e0; /* Light gray text for readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff; /* White color for headings */
+  margin: 0;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1rem; /* Standard text size */
+  line-height: 1.6;
+}
+
+a {
+  color: #1e90ff; /* Bright blue color for links */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+a:hover {
+  color: #ffcc00; /* Gold color on hover */
+}
+
+* {
+  box-sizing: border-box; /* Ensure consistent padding and margin handling */
+}

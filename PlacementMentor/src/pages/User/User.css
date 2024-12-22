@@ -1,0 +1,111 @@
+/* General Page Background */
+body {
+  background-color: #007bff; /* Blue background for the entire page */
+  color: #fff; /* White text color for contrast */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Job Gallery Section */
+.job-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 30px;
+  background-color:rgb(27, 66, 117); /* White background for the gallery */
+  border-radius: 10px; /* Rounded corners for a sleek effect */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.job-gallery .job-item {
+  background-color: #160f55; /* Light background for each item */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-gallery .job-item:hover {
+  transform: translateY(-5px); /* Hover effect to raise item */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Text Styling */
+.n-text {
+  font-size: 1.8rem; /* Slightly smaller for better readability */
+  color: #8e8a8a;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.hi-text {
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 2.25rem;
+  color: #00bcd4; /* Aqua color for a fresh, modern feel */
+  position: relative;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.hi-text:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 30px;
+  height: 3px;
+  background-color: #00bcd4; /* Aqua underline effect */
+}
+
+/* My Projects Title */
+.my-projects {
+  margin-top: 50px;
+  font-size: 2.25rem;
+  text-align: center;
+  color: #fff; /* White color for better contrast */
+  font-weight: bold;
+}
+
+/* Popup Window */
+.popup {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  border-radius: 10px;
+  max-width: 400px;
+  min-width: 300px;
+  display: none; /* Hide initially */
+}
+
+.popup p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .job-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .hi-text {
+    font-size: 1.8rem;
+  }
+
+  .job-gallery .job-item {
+    padding: 15px;
+    font-size: 1.6rem;
+  }
+
+  .my-projects {
+    font-size: 2rem;
+  }
+}

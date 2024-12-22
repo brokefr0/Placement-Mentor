@@ -1,0 +1,196 @@
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 60px 20px; /* Increase margin for more space */
+  color: #fff;
+}
+
+.nav-main {
+  width: 60%; /* Adjust width for more space */
+  background-color: rgb(34, 32, 32);
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Adding shadow for a modern effect */
+}
+
+.opt {
+  padding: 5px;
+  display: flex;
+  flex: 1;
+}
+
+.red {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  background-color: red;
+  margin: 4px;
+  border-radius: 50%;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.red:hover {
+  transform: scale(1.2); /* Scale effect on hover */
+}
+
+.yellow {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  background-color: yellow;
+  margin: 4px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.yellow:hover {
+  transform: scale(1.2);
+}
+
+.green {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  background-color: greenyellow;
+  margin: 4px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.green:hover {
+  transform: scale(1.2);
+}
+
+.text {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
+.window {
+  width: 60%; /* Adjust width for more space */
+  min-height: 500px;
+  backdrop-filter: blur(5px) saturate(180%);
+  -webkit-backdrop-filter: blur(5px) saturate(180%);
+  background-color: rgba(43, 2, 48, 0.7);
+  border-radius: 15px; /* More rounded edges */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Lighter border for contrast */
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  padding: 20px; /* Add padding to increase space for content */
+}
+
+.window:hover {
+  transform: scale(1.02); /* Slight scaling on hover */
+  border-color: rgba(255, 255, 255, 0.5); /* Brighter border on hover */
+}
+
+.window label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+
+.window label span {
+  color: aqua;
+}
+
+.window input {
+  background: rgba(31, 3, 34, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+  font-size: 17px;
+  color: yellow;
+  border-radius: 5px; /* Rounded corners */
+  padding: 8px;
+  margin-top: 10px;
+  transition: border 0.3s ease, background 0.3s ease; /* Smooth transition */
+}
+
+.window input:focus {
+  outline: none;
+  background: rgba(31, 3, 34, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Focus border effect */
+}
+
+.res {
+  color: rgb(64, 255, 47);
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px rgba(64, 255, 47, 0.7); /* Glowing effect */
+}
+
+.comp {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.im {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: gray;
+  box-shadow: 5px 5px 14px 2px rgba(242, 238, 238, 0.4);
+  max-width: 200px; /* Adjust image container size */
+  height: auto;
+}
+
+.im img {
+  display: block;
+  max-width: 180px; /* Make image smaller */
+  height: auto;
+  border-radius: 8px;
+}
+
+.desc {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.desc-t {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Media query adjustments for smaller screens */
+@media (max-width: 768px) {
+  .cont {
+    margin: 40px 15px; /* Reduce margin */
+  }
+
+  .nav-main {
+    width: 100%; /* Make navigation width 100% on smaller screens */
+  }
+
+  .window {
+    width: 90%; /* Make window width 90% on smaller screens */
+  }
+
+  .comp {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .im {
+    max-width: 150px; /* Make image container smaller */
+  }
+
+  .im img {
+    max-width: 150px; /* Make image smaller */
+  }
+
+  .desc-t {
+    font-size: 1rem;
+  }
+}
